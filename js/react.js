@@ -22,7 +22,7 @@ var reactContainer = document.getElementById("react");
                     },
                     React.createElement("div", {
                         className: "mdl-cell mdl-cell--7-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone"
-                    }, React.createElement("h2", null, "Total Movie Sales"), React.createElement("h4", null, "Movie 1 vs Movie 2"), React.createElement("canvas", {
+                    }, React.createElement("h2", null, "Total Movie Sales"), React.createElement("h4", null, "{{movies[0].title}} vs {{movies[1].title}}"), React.createElement("canvas", {
                         id: "myChart"
                     })), React.createElement("div", {
                         className: "sales mdl-cell mdl-cell--5-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone"
@@ -30,11 +30,11 @@ var reactContainer = document.getElementById("react");
                         className: "salesTitles"
                     }, React.createElement("h6", null, "Average number of sales in the past month in: ", React.createElement("span", null, "United States")), React.createElement("h4", null, React.createElement("span", null, "All sales: 162,884"))), React.createElement("div", {
                         className: "salesStates"
-                    }, React.createElement("h3", null, "2,346"), React.createElement("h6", null, "Total orders - Movie 1"), React.createElement("span", {
+                    }, React.createElement("h3", null, "{{movies[0].weekSales}}"), React.createElement("h6", null, "Total orders - {{movies[0].title}}"), React.createElement("span", {
                         className: "mdl-chip mdl-chip--contact"
                     }, React.createElement("span", {
                         className: "movie1Bar mdl-chip__contact mdl-color--grey"
-                    })), React.createElement("h3", null, "4,422"), React.createElement("h6", null, "Total orders - Movie 2"), React.createElement("span", {
+                    })), React.createElement("h3", null, "{{movies[1].weekSales}}"), React.createElement("h6", null, "Total orders - {{movies[1].title}}"), React.createElement("span", {
                         className: "mdl-chip mdl-chip--contact"
                     }, React.createElement("span", {
                         className: "movie2Bar mdl-chip__contact mdl-color--teal"
@@ -49,27 +49,27 @@ var reactContainer = document.getElementById("react");
                 "div", {
                     className: "movie mdl-grid"
                 }, React.createElement("div", {
-                    className: "mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone"
+                    className: "mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone",
                 }, React.createElement("div", {
                     className: "movieCard mdl-card mdl-shadow--8dp mdl-cell mdl-cell--12-col"
                 }, React.createElement("div", {
                     className: "movieOneRow mdl-grid"
                 }, React.createElement("div", {
                     className: "mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop"
-                }, React.createElement("h1", null, "Movie 1")), React.createElement("div", {
+                }, React.createElement("h1", null, "{{movies[0].title}}")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
-                }, React.createElement("h4", null, "May 3, 2015")), React.createElement("div", {
+                }, React.createElement("h4", null, "{{movies[0].date1}}")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
                 }, React.createElement("button", {
                     className: "mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored",
-                    id: "movie1"
+                    id: "movie"
                 }, "Buy Tickets")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
-                }, React.createElement("h4", null, "May 4 2015")), React.createElement("div", {
+                }, React.createElement("h4", null, "{{movies[0].date2}}")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
                 }, React.createElement("button", {
                     className: "mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored",
-                    id: "movie1"
+                    id: "movie"
                 }, "Buy Tickets"))))), React.createElement("div", {
                     className: "mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone"
                 }, React.createElement("div", {
@@ -80,18 +80,18 @@ var reactContainer = document.getElementById("react");
                     className: "mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop"
                 }, React.createElement("h1", null, "Movie 2")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
-                }, React.createElement("h4", null, "May 3 2015")), React.createElement("div", {
+                }, React.createElement("h4", null, "{{movies[0].date1}}")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
                 }, React.createElement("button", {
                     className: "mdl-button mdl-button--raised mdl-js dialog-button mdl-button--colored",
-                    id: "movie2"
+                    id: "movie"
                 }, "Buy Tickets")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
-                }, React.createElement("h4", null, "May 4 2015")), React.createElement("div", {
+                }, React.createElement("h4", null, "{{movies[1].date2}}")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
                 }, React.createElement("button", {
                     className: "mdl-button mdl-button--raised mdl-js-button dialog-button mdl-button--colored",
-                    id: "movie2"
+                    id: "movie"
                 }, "Buy Tickets")))))
             ), React.createElement("dialog", {
                 className: "mdl-dialog"
@@ -174,7 +174,7 @@ var reactContainer = document.getElementById("react");
                 type: "button",
                 className: "close mdl-button",
                 id: "close1"
-            }, "Cancel"))),React.createElement("section",{id:"twoBefore"},React.createElement("h6",{className:"mdl-dialog__title"},"Movie 1 May 3 2015"),React.createElement("div",{className:"mdl-dialog__content",id:"twoContentsBefore"},React.createElement("img",{src:"img/download.png"}),React.createElement("p",null,"Thank you for your purchase {{firstName}}")),React.createElement("div",{className:"mdl-dialog__action"},React.createElement("button",{type:"button",className:"agree mdl-button", id:"agree2"},"Submit"),React.createElement("button",{type:"button",className:"close mdl-button", id:"close2"},"Cancel"))))
+            }, "Cancel"))),React.createElement("section",{id:"twoBefore"},React.createElement("h6",{className:"mdl-dialog__title"},""),React.createElement("div",{className:"mdl-dialog__content",id:"twoContentsBefore"},React.createElement("img",{src:"img/download.png"}),React.createElement("p",null,"Thank you for your purchase {{firstName}}")),React.createElement("div",{className:"mdl-dialog__action"},React.createElement("button",{type:"button",className:"agree mdl-button", id:"agree2"},"Submit"),React.createElement("button",{type:"button",className:"close mdl-button", id:"close2"},"Cancel"))))
         ),
         /*Reacts version of html template*/
         reactContainer
