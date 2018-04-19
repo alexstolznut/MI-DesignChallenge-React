@@ -1,6 +1,7 @@
 //const jsContainer = document.getElementById("js");
 var reactContainer = document.getElementById("react");
 
+
     //jsContainer.innerHTML = `
     //  <div class="demo">
     //    Hello JS
@@ -56,7 +57,7 @@ var reactContainer = document.getElementById("react");
                     className: "movieOneRow mdl-grid"
                 }, React.createElement("div", {
                     className: "mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop"
-                }, React.createElement("h1", null, "{{movies[0].title}}")), React.createElement("div", {
+                }, React.createElement("h1", null, "{{movies[0].title}}")),React.createElement("div",{className:"mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop"},React.createElement("h6",null,React.createElement("span",null,"Release Date"), React.createElement("i",{className:"material-icons"},"update"),"04 Jan 2015")) ,React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
                 }, React.createElement("h4", null, "{{movies[0].date1}}")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
@@ -78,7 +79,7 @@ var reactContainer = document.getElementById("react");
                     className: "movieOneRow mdl-grid"
                 }, React.createElement("div", {
                     className: "mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop"
-                }, React.createElement("h1", null, "Movie 2")), React.createElement("div", {
+                }, React.createElement("h1", null, "{{movies[1].title}}")),React.createElement("div",{className:"mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-desktop"},React.createElement("h6",null,React.createElement("span",null,"Release Date"), React.createElement("i",{className:"material-icons"},"update"),"04 Jan 2015")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
                 }, React.createElement("h4", null, "{{movies[0].date1}}")), React.createElement("div", {
                     className: "mdl-cell mdl-cell--4-col-tablet mdl-cell--6-col-desktop"
