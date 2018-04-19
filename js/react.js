@@ -16,7 +16,7 @@ var reactContainer = document.getElementById("react");
                 className: "stats mdl-grid"
             },
             React.createElement("div", {
-                    className: "mdl-cell mdl-cell--12-col mdl-card mdl-shadow--16dp"
+                    className: "mdl-cell mdl-cell--12-col mdl-card mdl-shadow--8dp"
                 },
                 React.createElement("div", {
                         className: "mdl-grid"
