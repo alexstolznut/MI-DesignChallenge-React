@@ -75,6 +75,7 @@ function appendChart() {
             scales: {
                 yAxes: [{
                     ticks: {
+                        suggestedMax: 70,
                         beginAtZero: false
                     }
             }]
