@@ -30,7 +30,7 @@ var reactContainer = document.getElementById("react");
                     }, React.createElement("div", {
                         className: "salesTitles"
                     }, React.createElement("h6", null, "Average number of sales in the past month in: ", React.createElement("span", null, "United States")), React.createElement("h4", null, React.createElement("span", null, "All sales: 162,884"))), React.createElement("div", {
-                        className: "salesStates"
+                        className: "salesStats"
                     }, React.createElement("h3", null, "{{movies[0].weekSales}}"), React.createElement("h6", null, "Total orders - {{movies[0].title}}"), React.createElement("span", {
                         className: "mdl-chip mdl-chip--contact"
                     }, React.createElement("span", {

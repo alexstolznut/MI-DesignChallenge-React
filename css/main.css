@@ -32,7 +32,7 @@ canvas {
 
 .salesStats {
   clear: both;
-  padding-top: 5%; }
+  padding-top: 20%; }
   .salesStats h3 {
     font-weight: 300;
     color: grey;
@@ -90,11 +90,13 @@ span.mdl-chip__contact.movie2Bar {
   .movie .mdl-card {
     min-height: auto; }
   .movie h1 {
-    font-weight: 600; }
+    font-weight: 600;
+    padding: 0% !important;
+    margin: 0 auto; }
   .movie h4, .movie button {
-    width: 0 auto;
+    margin: 0 auto;
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 10% !important;
     float: left; }
   .movie button {
     width: 70%;
@@ -109,9 +111,8 @@ span.mdl-chip__contact.movie2Bar {
   .movieCard h6 {
     float: left;
     padding: 0% !important;
-    padding-bottom: 5% !important;
     vertical-align: baseline;
-    margin-bottom: 0% !important; }
+    margin: 0 auto !important; }
     .movieCard h6 i {
       margin: 0 auto;
       padding-right: 2%;
@@ -201,9 +202,10 @@ img {
     transform: translateY(5%); }
   100% {
     transform: translateY(10%); } }
-@media(min-width:600px) and (max-width:1297px) {
+@media(min-width:600px) and (max-width:850px) {
   .salesStats {
-    clear: both; }
+    clear: both;
+    padding-top: 5% !important; }
 
   .salesTitles h4, .salesTitles h6 {
     float: left;
@@ -213,13 +215,19 @@ img {
     width: 100%; }
 
   .salesTitles h4, .salesTitles h6 {
-    float: left; } }
+    float: left; }
+
+  .salesStats {
+    padding-top: 5% !important; } }
 @media(min-width:320px) and (max-width:499px) {
   .update i, .update h6 {
     float: left; }
 
   .salesTitles h4 {
     float: left; }
+
+  .salesStats {
+    padding-top: 5% !important; }
 
   .movie h4, .movie button {
     padding-bottom: 0%; }
