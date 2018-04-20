@@ -169,13 +169,13 @@ var reactContainer = document.getElementById("react");
                 className: "mdl-dialog__action"
             }, React.createElement("button", {
                 type: "button",
-                className: "agree mdl-button",
-                id: "agree1"
-            }, "Submit"), React.createElement("button", {
-                type: "button",
                 className: "close mdl-button",
                 id: "close1"
-            }, "Cancel"))),React.createElement("section",{id:"twoBefore"},React.createElement("h6",{className:"mdl-dialog__title"},""),React.createElement("div",{className:"mdl-dialog__content",id:"twoContentsBefore"},React.createElement("img",{src:"img/download.png"}),React.createElement("p",null,"Thank you for your purchase {{firstName}}")),React.createElement("div",{className:"mdl-dialog__action"},React.createElement("button",{type:"button",className:"agree mdl-button", id:"agree2"},"Submit"),React.createElement("button",{type:"button",className:"close mdl-button", id:"close2"},"Cancel"))))
+            }, "Cancel"), React.createElement("button", {
+                type: "button",
+                className: "agree mdl-button",
+                id: "agree1"
+            }, "Submit"))),React.createElement("section",{id:"twoBefore"},React.createElement("h6",{className:"mdl-dialog__title"},""),React.createElement("div",{className:"mdl-dialog__content",id:"twoContentsBefore"},React.createElement("img",{src:"img/download.png"}),React.createElement("p",null,"Thank you for your purchase {{firstName}}")),React.createElement("div",{className:"mdl-dialog__action"},React.createElement("button",{type:"button",className:"agree mdl-button", id:"close2"},"Cancel"),React.createElement("button",{type:"button",className:"close mdl-button", id:"agree2"},"Submit"))))
         ),
         /*Reacts version of html template*/
         reactContainer
